@@ -40,14 +40,14 @@ Project is created with:
 * Google Colab with GPU Acceleration
 
 ## Findings and Conclusion
-Based on confusion matrices, F1 scores, and ROC curves, it is evident that each model possesses strengths and weaknesses in classifying 'Bacterial Pneumonia,' 'COVID-19,' 'Healthy,' and 'Viral Pneumonia.'
+Based on confusion matrices, F1 scores, and ROC curves, it is evident that each model possesses strengths and weaknesses in classifying 'Bacterial Pneumonia', 'COVID-19','Healthy' and 'Viral Pneumonia'.
 
-The Baseline model can predict 'Bacterial Pneumonia' and 'Healthy' with respectable F1 scores (0.73 and 0.83, respectively). However, it struggles to classify 'COVID-19' (F1 score = 0). The model's ROC curve area suggests a relatively good discriminative ability for all classes, particularly 'COVID-19' and 'Healthy.'
+The Baseline model can predict 'Bacterial Pneumonia' and 'Healthy' with respectable F1 scores (0.73 and 0.83, respectively). However, it struggles to classify 'COVID-19' (F1 score = 0). The model's ROC curve area suggests a relatively good discriminative ability for all classes, particularly 'COVID-19' and 'Healthy'.
 
-The Tuned model displays improved performance in predicting 'COVID-19' (F1 score = 0.33) compared to the baseline model. Nonetheless, its performance is compromised in other classes, particularly 'Viral Pneumonia,' where the F1 score sees a significant drop (0.31). ROC curve areas are lower compared to the baseline model across all classes.
+The Tuned model displays improved performance in predicting 'COVID-19' (F1 score = 0.33) compared to the baseline model. Nonetheless, its performance is compromised in other classes, particularly 'Viral Pneumonia', where the F1 score sees a significant drop (0.31). ROC curve areas are lower compared to the baseline model across all classes.
 
 The VGG16 transfer learning model excels in predicting 'Healthy' with an impressive F1 score of 0.91. It boasts the highest ROC curve area for all labels, indicating excellent discriminative capabilities. However, it struggles in predicting 'COVID-19' and 'Viral Pneumonia' (F1 scores = 0.24 and 0.66, respectively).
 
-The ResNet50V2 transfer learning model demonstrates the best performance in classifying 'Bacterial Pneumonia' with an F1 score of 0.77. It also performs well in predicting 'Healthy' and 'Viral Pneumonia' (F1 scores = 0.76 and 0.6, respectively). However, it performs poorly in classifying 'COVID-19,' with a low F1 score of 0.07.
+The ResNet50V2 transfer learning model demonstrates the best performance in classifying 'Bacterial Pneumonia' with an F1 score of 0.77. It also performs well in predicting 'Healthy' and 'Viral Pneumonia' (F1 scores = 0.76 and 0.6, respectively). However, it performs poorly in classifying 'COVID-19' with a low F1 score of 0.07.
 
 In conclusion, while no single model is flawless, each has its strengths. For instance, the ResNet50V2 model excels in predicting 'Bacterial Pneumonia', whereas the VGG16 model shines in predicting 'Healthy'. The Tuned model displays potential for 'COVID-19' but requires further refinement due to its complexity. This suggests the need for more sophisticated model improvement or ensemble approaches to effectively address this multi-class classification task. This project also emphasizes that transfer learning can save significant computational resources and time by leveraging pre-trained models, especially when creating a robust model from scratch would demand extensive training and a substantial dataset.
