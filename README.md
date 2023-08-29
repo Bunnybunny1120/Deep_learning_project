@@ -1,5 +1,5 @@
 # X-ray Multi Class Classification
-The objective of the project was to classify images into four categories: 'Bacterial Pneumonia', 'Viral Pneumonia', 'No Pneumonia (healthy)', and 'COVID-19'. Our work involved creating a baseline model after exploratory data analysis (EDA) and data preprocessing. Subsequently, we performed experiments involving hyperparameter tuning, including dropout layers, optimizers, and regularizations. Additionally, we explored the effectiveness of transfer learning models to compare their performance. The evaluation metrics employed encompassed confusion matrices, F1 scores, and ROC curves.
+The objective of the project was to classify images into four categories: 'Bacterial Pneumonia', 'Viral Pneumonia', 'No Pneumonia (healthy)', and 'COVID-19'. Our work involved creating a baseline model after exploratory data analysis (EDA) and data preprocessing. Subsequently, we performed experiments involving hyperparameter tuning, including dropout layers, optimizers, and regularizations. Additionally, we explored the effectiveness of transfer learning models to compare their performance. The evaluation metrics employed encompassed confusion matrix, F1 scores, and ROC curves.
 
 
 ## Table of contents
@@ -32,7 +32,7 @@ Regularization techniques, including dropout layers, optimizers, and regularizat
 Transfer learning was explored by employing pre-trained models such as VGG16 and ResNet50. Fine-tuning these models on the dataset allowed for a comparison of their performance against our custom-built models.
 
 #### Evaluation metrics
-Model evaluation involved metrics such as accuracy, precision, recall, and F1-score. Confusion matrices provided insights into the models' ability to correctly classify images from various classes. ROC curves were employed to assess the models' capacity to distinguish between classes.
+Model evaluation involved metrics such as accuracy, precision, recall, and F1-score. Confusion matrix provided insights into the models' ability to correctly classify images from various classes. ROC curves were employed to assess the models' capacity to distinguish between classes.
 
 
 ## Implementation
@@ -43,7 +43,7 @@ Project is created with:
 
 
 ## Findings and Conclusion
-Based on confusion matrices, F1 scores, and ROC curves, it is evident that each model possesses strengths and weaknesses in classifying 'Bacterial Pneumonia', 'COVID-19','Healthy' and 'Viral Pneumonia'.
+Based on the confusion matrix, F1 scores, and ROC curves, it is evident that each model possesses strengths and weaknesses in classifying 'Bacterial Pneumonia', 'COVID-19','Healthy' and 'Viral Pneumonia'.
 
 The Baseline model appear to predict 'Bacterial Pneumonia' and 'Healthy' well with respectable F1 scores (0.76 and 0.87, respectively). However, it struggles to differentiate 'Bacterial Pneumonia' and 'Viral Pneumonia'. It also displayed difficulty to classify 'COVID-19' (F1 score = 0.19). The model's ROC curve area suggests a relatively good discriminative ability for all classes, particularly 'COVID-19' and 'Healthy'. ![Baseline](./Baseline.png)
 
